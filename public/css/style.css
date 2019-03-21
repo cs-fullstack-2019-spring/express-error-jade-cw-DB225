@@ -1,0 +1,54 @@
+body{
+    margin: 1.5px 15px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+        "header header header header header header header header header "
+        ". . section section section article article . ."
+        ". . aside aside twin2 twin2 twin2 . ."
+        "footer footer footer footer footer footer footer footer footer";
+    grid-gap: 20px;
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+    background:steelblue;
+}
+
+section{
+    grid-area: section;
+    border: 1px solid black;
+    background: mediumseagreen;
+    text-align: center;
+}
+
+article{
+    grid-area: article;
+    border: 1px solid black;
+    background:blueviolet;
+    text-align: center;
+}
+
+.t1{
+    grid-area: aside;
+    border: 1px solid black;
+    background: yellow;
+    text-align: center;
+}
+
+.t2{
+    grid-area: twin2;
+    border: 1px solid black;
+    background: yellow;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background: rgba(0, 0, 194, 0.65);
+}

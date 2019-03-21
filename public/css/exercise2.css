@@ -1,0 +1,48 @@
+body{
+    margin: 1.5px 15px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+            "header header header header"
+            "section section article article"
+            "section section aside footer";
+    grid-gap: 20px;
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+    background:steelblue;
+    text-align: center;
+}
+
+section{
+    grid-area: section;
+    border: 1px solid black;
+    background:steelblue;
+    text-align: center;
+}
+
+article{
+    grid-area: article;
+    border: 1px solid black;
+    background:steelblue;
+    text-align: center;
+}
+
+aside{
+    grid-area: aside;
+    border: 1px solid black;
+    background:steelblue;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background:steelblue;
+    text-align: center;
+}
